@@ -1,0 +1,16 @@
+body {
+	background-image: url(../img/fondo3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ediciontitle {
+	font-family: MyCustomFont;
+	color: #FF8000;
+	font-size: 4em;
+	text-align: center;
+}
+
+.colores {
+	background-color: rgba(241, 145, 51, 0.94);
+}
