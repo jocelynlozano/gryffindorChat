@@ -1,26 +1,25 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Gryffindor Chat</title>
-        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
-        <link rel="icono" href="/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <title>Twitter</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="fonts/style.css">
+        <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
     </head>
     <body>
-        <form>
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <h2 class="publicaciones">Publicaciones</h2>
-                    <textarea class="textarea" id="txt" type="texto"></textarea>
-                    <button type="submit" id="boton">Enviar</button>
-                    <div class="contenedor" id="mensaje"></div>
-                </div>
-            </div>
-        </form>
-        <script type="text/javascript" src="js/main.js"></script>
+        <div class="cajatweet">
+            <h2>Escribe tu Tweet</h2>
+            <form id="tweet" name="tweet">
+                <textarea class="ediciontextarea" name="text-tweet" id="text-tweet" cols="50" rows="5" placeholder="Publicar un nuevo tweet..."></textarea>
+                <button id="publicar" class="estilodeboton" type="submit" value="Publicar"><span class="icon-quill"></span>Publicar</button>
+                    <span id="counter"></span>  <!-- Mostrar caracteres que faltan al escribir tweet.-->
+            </form>
+            <div class="contenedor"></div>
+            <div id="resultado" style="display:none"></div><!-- Display none oculta elemento pasar a css-->
+            <div class="evitadeformacion"></div>
+        </div>
+        <script src="js/main.js"></script>
     </body>
 </html>

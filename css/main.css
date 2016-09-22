@@ -1,22 +1,50 @@
+*;
+html {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
-	background-image: url(../img/paas.jpg);
-	background-size: cover;
+	background-color: #E6F5F8;
+	font-family: 'David Libre', serif;
+	font-size: 14px;
 }
 
-.textarea {
-	margin-top: 5%;
-    margin-left: 35%; 
+h2{
+	color: #8899A6;
+	font-size: 1.4em;
+	margin-bottom: 20px;
 }
 
-.publicaciones {
-	color: #FE2E64;
-	font-style: Arial;
-	margin-left: 35%;
+textarea, .cajatweet, .estilodeboton{
+	border-radius: 4px;
 }
 
-.contenedor {
-	background-color: #81F7BE;
-	color: #6E6E6E;
-	font-family: 'Baloo Bhaina', cursive;
-    margin-left: 35%; 
+.estilodeboton {
+	background-color: #2EABC6;
+	border: 1px solid ;
+	color:#FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 20px;
+	font-family: 'Patua One', cursive;
+}
+
+.cajatweet {
+	background-color: #fff;
+	box-shadow: rgba(0,0,0,0.2) 0 0px 5px;
+	margin: 50px auto;
+	padding: 20px 30px;
+	width: 380px;
+    height: 180px;
+}
+
+.error {
+	color: #b94a48;
+	box-sizing: border-box;
+	background-color: #f2dede;
+	margin-bottom: 0px;
+	padding: 8px;
+	text-align: center;
+	width: 100%;
 }
